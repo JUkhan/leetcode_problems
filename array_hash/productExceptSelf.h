@@ -35,8 +35,7 @@ vector<int> productExceptSelf(vector<int> &nums)
     partial_sum(nums.rbegin(), nums.rend(), postfix.begin() + 1, [](int a, int b)
                 { return a * b; });
     reverse(postfix.begin(), postfix.end());
-    print(prefix);
-    print(postfix);
+    
     for (int i = 0; i < nums.size(); i++)
     {
         res[i] = prefix[i] * postfix[i + 1];

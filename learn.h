@@ -56,7 +56,19 @@ void learn_container()
     {
         print("not found");
     }
-    print("end container");
+    print("-----group-----");
+
+    unordered_map<string, vector<string>> map{
+        {"abt", {"bat"}},
+        {"ant",{"nat","tan"}},
+        {"aet",{"ate","eat","tea"}}
+    };
+    vector<vector<string>> output;
+    for(auto &p:map){
+        output.push_back(map[p.first]);
+    }
+    print(output);
+     print("end container");
 }
 
 void learn_string_compare()
@@ -93,6 +105,6 @@ void learn_string_compare()
 void run()
 {
     cout << "learning..." << endl;
-    // learn_container();
-    learn_string_compare();
+    learn_container();
+    //learn_string_compare();
 }

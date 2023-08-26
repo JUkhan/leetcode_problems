@@ -85,17 +85,11 @@ vector<int> topKFrequent_old_old(vector<int> &nums, int k)
  */
 vector<int> topKFrequent(vector<int> &nums, int k)
 {
-    unordered_map<int, int> m;
+    unordered_map<int, int> map;
     int n = nums.size() + 1;
     vector<vector<int>> store(n);
-    for (auto n : nums)
-    {
-        m[n]++;
-    }
-    for (auto &p : m)
-    {
-        store[p.second].push_back(p.first);
-    }
+    for (auto n : nums) map[n]++;
+    for (auto &p : map) store[p.second].push_back(p.first);
     vector<int> res;
     for (auto it = store.rbegin(); it != store.rend(); ++it)
     {
