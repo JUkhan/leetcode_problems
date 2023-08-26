@@ -4,8 +4,10 @@
 //#include "array_hash/groupAnagram.h"
 //#include "array_hash/topKFrequent.h"
 //#include "array_hash/productExceptSelf.h"
-#include "array_hash/isValidSudoku.h"
-
+//#include "array_hash/isValidSudoku.h"
+//#include "array_hash/encodeDecode.h"
+#include "array_hash/longestConsecutive.h"
+//#include "learn.h"
 
 int main()
 {

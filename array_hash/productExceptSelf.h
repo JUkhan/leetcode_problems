@@ -8,26 +8,7 @@ vector<int> productExceptSelf_old(vector<int> &nums)
 
     int product = accumulate(nums.begin(), nums.end(), 1, [](int a, int b)
                              { return a * b; });
-    // auto mm=accumulate(nums.begin(), nums.end(),vector<pair<int,int>>(), [](vector<pair<int,int>> acc, int a){
-    //     acc.push_back({a,a+1});
-    //     return acc;
-    // });
-    // for(auto p:mm)cout<<p.first<<":"<<p.second<<endl;
-
-    // vector<int> m(nums.size());
-    // partial_sum(nums.begin(), nums.end(), m.begin(), [](int a, int b){return a*b;});
-    // for(int p:m)cout<<p<<" ";
-    // cout<<endl;
-    // none_of
-    // any_of
-    // copy_n
-    // iota
-    // cout<<(all_of(nums.begin(), nums.end(),[](int a){return a>0;})?"all positive":"not all positive")<<endl;
-    // int min=*min_element(nums.begin(), nums.end());
-    // int max=*max_element(nums.begin(), nums.end());
-    // int times=count(nums.begin(), nums.end(), 3);
-    // int elm=*find(nums.begin(), nums.end(), 3);
-
+    
     vector<int> res(nums.size());
 
     transform(nums.begin(), nums.end(), res.begin(), [&](int a)

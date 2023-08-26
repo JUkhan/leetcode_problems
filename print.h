@@ -43,3 +43,7 @@ void print(vector<vector<T>> &vec)
     }
     cout << endl;
 }
+
+void print(string str){
+    cout<<endl<<str<<endl;
+}
