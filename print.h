@@ -44,6 +44,7 @@ void print(vector<vector<T>> &vec)
     cout << endl;
 }
 
-void print(string str){
+template<typename T>
+void print(T str){
     cout<<endl<<str<<endl;
 }
