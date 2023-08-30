@@ -52,10 +52,32 @@ bool isPalindrome(string s)
     return true;
 }
 
+bool isPalindrome2(string s)
+{
+    
+    auto it = remove_if(s.begin(), s.end(), [](char ch)
+                        { return !isalnum(ch) || ch == ' '; });
+    s.erase(it, s.end());
+    vector<char> m(s.size());
+    transform(s.begin(), s.end(),m.begin(), [](char ch){return isupper(ch)?tolower(ch):ch;});
+    string ms(m.begin(), m.end());
+    print(ms);
+    int l = 0, r = s.size() - 1;
+    while (l < r)
+    {
+        if (tolower(s[l]) != tolower(s[r]))
+            return false;
+        l++;
+        r--;
+    }
+
+    return true;
+}
+
 void run()
 {
     string s = "A man, a plan, a canal: Panama";
-    bool res = isPalindrome_old(s);
+    bool res = isPalindrome(s);
     print("isPalindrome:");
     print(res);
 }

@@ -8,6 +8,9 @@
 #include <unordered_set>
 #include <string>
 #include <queue>
+#include<tuple>
+#include<regex>
+
 using namespace std;
 
 template<typename T>

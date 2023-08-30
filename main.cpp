@@ -8,7 +8,10 @@
 //#include "array_hash/encodeDecode.h"
 //#include "array_hash/longestConsecutive.h"
 //#include "two_pointers/validPalindrome.h"
-#include "two_pointers/twoSum.h"
+//#include "two_pointers/twoSum.h"
+//#include "two_pointers/threeSum.h"
+//#include "two_pointers/maxArea.h"
+#include "two_pointers/trap.h"
 //#include "learn.h"
 
 int main()
