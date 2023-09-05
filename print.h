@@ -10,6 +10,10 @@
 #include <queue>
 #include<tuple>
 #include<regex>
+#include<climits>
+#include<stack>
+#include <functional>
+
 
 using namespace std;
 
@@ -23,6 +27,15 @@ void print(vector<T> &vec)
     cout << endl;
 }
 
+template<typename T>
+void print(unordered_set<T> &vec)
+{
+    for (auto a : vec)
+    {
+        cout << a << " ";
+    }
+    cout << endl;
+}
 
 template<typename T, typename V>
 void print(vector<pair<T, V>> &vec)
@@ -50,4 +63,12 @@ void print(vector<vector<T>> &vec)
 template<typename T>
 void print(T str){
     cout<<endl<<str<<endl;
+}
+
+template<typename T, typename N>
+void print(unordered_map<T, N> &map){
+    cout<<endl;
+    for(auto it : map)
+        cout<<it.first<<":"<<it.second<<", ";
+    cout<<endl;
 }
