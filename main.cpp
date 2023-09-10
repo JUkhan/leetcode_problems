@@ -11,8 +11,8 @@
 //#include "two_pointers/twoSum.h"
 //#include "two_pointers/threeSum.h"
 //#include "two_pointers/maxArea.h"
-//#include "two_pointers/trap.h"
-//#include "sliding_window/maxFrofit.h"
+#include "two_pointers/trap.h"
+
 //#include "learn.h"
 
 int main()

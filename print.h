@@ -13,6 +13,7 @@
 #include<climits>
 #include<stack>
 #include <functional>
+#include <sstream>
 
 
 using namespace std;
@@ -23,6 +24,17 @@ void print(vector<T> &vec)
     for (auto a : vec)
     {
         cout << a << " ";
+    }
+    cout << endl; 
+}
+
+template<typename T>
+void print(stack<T> st)
+{
+
+    while(!st.empty()){
+        cout<<st.top()<<" ";
+        st.pop();
     }
     cout << endl;
 }

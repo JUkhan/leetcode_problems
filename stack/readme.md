@@ -1,4 +1,4 @@
-`❤` One the most important `stack` algorithm is `monotonically increment` or `decrement` that brings time complexity `O(n)` from `O(n^2)`
+`❤` One of the most important `stack` algorithm is `monotonic increasing` or `decreasing` that brings time complexity `O(n)` from `O(n^2)`
 
 Find the larger rectangle area from histogram:
 
@@ -38,3 +38,34 @@ int largestRectangleArea(vector<int> &heights)
 }
 ```
 
+## `❤` `String  concatenation`
+
+```c++
+string res;
+while (!st.empty())
+{
+    res = st.top() + res;
+    st.pop();
+}
+```
+ 
+This type of string concatenation is dangerous shown Memory Limit Exceeded when need to concate lots of strings.
+
+## This is the better approach - No Memory Limit Exceeded
+```c++
+while(!st.empty())
+{
+    res += st.top();
+    st.pop();
+}
+reverse(res.begin() , res.end());
+```     
+      
+## Remove the zeros from the left if they exist.
+```c++
+string res="00012398";
+while (res[0] == '0')
+    res.erase(0, 1);
+//12398
+```
+ 
