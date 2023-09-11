@@ -137,10 +137,11 @@ void learn_regex()
     std::cout << new_s << '\n';
 }
 
-void run()
+int main()
 {
     cout << "learning..." << endl;
     // learn_container();
     // learn_string_compare();
     learn_regex();
+    return 0;
 }

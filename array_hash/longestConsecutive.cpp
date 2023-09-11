@@ -35,10 +35,11 @@ int longestConsecutive(vector<int> &nums)
     return longest;
 }
 
-void run()
+int main()
 {
     vector<int> nums{0, 3, 7, 2, 5, 8, 4, 6, 0, 1};
     print(nums);
     print("longestConsecutive:");
     cout << longestConsecutive(nums) << endl;
+    return 0;
 }

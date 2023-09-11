@@ -27,9 +27,10 @@ bool containsDuplicate(vector<int> &nums)
     return false;
 }
 
-void run()
+int main()
 {
     vector<int> nums{1, 2, 3, 1};
     auto res = containsDuplicate(nums);
     cout << "containsDuplicate: " << res << endl;
+    return 0;
 }

@@ -35,10 +35,11 @@ vector<vector<string>> groupAnagrams(vector<string> &strs)
     return res;
 }
 
-void run()
+int main()
 {
     vector<string> strs{"eat", "tea", "tan", "ate", "nat", "bat"};
     auto res = groupAnagrams(strs);
     cout << "groupAnagrams:" << endl;
     print(res);
+    return 0;
 }

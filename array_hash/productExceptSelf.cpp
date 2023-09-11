@@ -43,10 +43,11 @@ vector<int> productExceptSelf(vector<int> &nums)
     return res;
 }
 
-void run()
+int main()
 {
     vector<int> nums{1, 2, 3, 4};
     auto res = productExceptSelf(nums);
     cout << "productExceptSelf:" << endl;
     print(res);
+    return 0;
 }

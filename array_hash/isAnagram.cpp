@@ -32,8 +32,9 @@ bool isAnagram(string s, string t)
     return true;
 }
 
-void run()
+int main()
 {
     const bool res = isAnagram("anagram", "nagaram");
     cout << "isAnagram: " << res << endl;
+    return 0;
 }

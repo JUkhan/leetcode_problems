@@ -30,7 +30,7 @@ vector<string> decode(string &str)
     return res;
 }
 
-void run()
+int main()
 {
     vector<string> words{"I", "Love", "You"};
     print("original:");
@@ -41,4 +41,5 @@ void run()
     print("after decode:");
     auto res=decode(encoded);
     print(res);
+    return 0;
 }
